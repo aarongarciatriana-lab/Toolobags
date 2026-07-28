@@ -476,13 +476,13 @@
         </footer>
 
         <script>
-            fetch('https://api.countapi.xyz/hit/tolobags-aarongarciatriana/visitas')
+            fetch('https://api.counterapi.dev/v1/Toolobags-aarongarciatriana/visitas/up')
                 .then(res => res.json())
                 .then(data => {
-                    document.getElementById('contador').textContent = data.value;
+                    document.getElementById('contador').textContent = data.count;
                 })
                 .catch(() => {
-                    document.getElementById('contador').textContent = '—';
+                    document.getElementById('contador').textContent = '1';
                 });
         </script>
 
